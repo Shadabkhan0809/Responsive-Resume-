@@ -6,4 +6,249 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Write CSS code below */
+body{
+    background-color:#a6abad;
+}
+
+.main-content{
+    min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    /* grid-template-rows: 20% 80%; */
+    grid-template-columns: 300px 700px;
+}
+
+.left-section{
+    /* grid-area: 1/1/3/2; */
+    grid-column: span 1;
+    background-color: #242531;
+}
+
+.right-section{
+    /* grid-area: 1/2/3/3; */
+    grid-column: span 1 / span 2;
+    background-color :#f7f7f7;
+}    
+
+.left-content{
+    padding: 1rem 1rem;
+}
+
+.profile-image{
+    width: 60%;
+    display: block;
+    margin: auto;
+    border-radius: 30%;
+    border: 5px white solid;
+}
+
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: whitesmoke;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+}
+
+.designation{
+    font-size: 1rem;
+    color: #94D9EA;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+
+
+.description{
+    font-size: 0.75rem;
+    color: whitesmoke;
+    text-align: center; 
+    padding: 1rem;
+}
+
+
+.icon{
+    color: white;
+    padding: 0.25rem 0rem 0.25rem 0.5rem;
+    font-size:  14px;
+}
+
+.icon i{
+    color: rgb(141, 164, 241);
+} 
+
+.main-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 2rem;
+}
+
+/* .contact-info li{
+    padding-top: 0.rem;
+} */
+.social-media {
+    padding: 3 rem;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    /* align-items: center; */
+    /* grid-column-start: 1;
+    grid-column-end: 4;*/
+ }
+
+
+
+
+/* -------------------------SKILLS---------------------------- */
+ .skills{
+    color: whitesmoke;
+    font-size: 0.75rem;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* .skill-item{
+    padding: 0.5rem 0.5rem;
+} */
+
+.skill-name{
+    text-align: left;
+    font-size: 0.65rem;
+    color: whitesmoke;
+    padding-bottom: 0.5rem ;
+}
+
+ /* .progress{
+    width: 100%;
+    height: 8000px;
+    background-color: #94D9EA;
+    border-radius: 280px;
+    -webkit-border-radius: 280;
+    -moz-border-radius: 280;
+    -ms-border-radius: 280;
+    -o-border-radius: 280;
+    border: 1px white solid;
+} */
+
+
+.progress-bar{
+    height: 4px;
+    background-color: #f5f5f5;
+    /* border-radius: 25px; */
+    border: 1px white solid;
+}   
+/* .progress-text{
+    text-align: right;
+    padding: 0.5rem 0.5rem;
+} */
+
+
+
+/* -----------------------Right-Main-Content------------------ */
+
+.right-main-content{
+    padding: 2rem 3rem;
+}
+
+.right-title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.para{
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content-details{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.left-content-details{
+    margin-right: 12%;
+    padding: 0.6rem;
+} 
+/* .left-content-details h5{
+    /* font-size: 1rem; */
+    /* font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding-bottom: 0.5rem;
+} */ 
+/* .right-content-details{
+    padding: 0.6rem;
+}
+.right-content-details h5{
+    padding-bottom: 0.6rem;
+} */
+
+/* Media Queries */
+
+
+@media screen and (max-width: 673px){
+    .main-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 630px){
+    .main-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+} 
+
+
+@media screen and (max-width: 423px){
+    .main-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .right-main-content{
+        padding: 1rem;
+    }
+    
+    .left-content-details{
+        margin-right: 4%;
+        padding: 0.4rem;
+    }
+} 
+
+@media screen and (max-width: 375px){
+    .main-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .right-main-content{
+        padding: 1rem;
+    }
+    .left-content-details{
+        margin-right: 4%;
+        padding: 0.4rem;
+    }
+    .right-content-details h5{
+        font-size: 0.75rem;
+        font-weight: bold;
+    }
+    /* *{
+        font-size: 1rem;
+    } */
+    
+    /* .company{
+        font-size: 0.2rem;
+        padding-left: 9%;
+    } */
+    
+ } 
